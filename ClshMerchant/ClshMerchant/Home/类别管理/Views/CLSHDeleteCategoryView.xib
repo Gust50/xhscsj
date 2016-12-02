@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CLSHDeleteCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="642"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGU-UW-unH">
+                    <rect key="frame" x="68" y="261" width="240" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqf-zH-gjR">
+                            <rect key="frame" x="0.0" y="69" width="240" height="1"/>
+                            <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="nq3-UX-F6J"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6o-pn-RrD">
+                            <rect key="frame" x="120" y="70" width="1" height="50"/>
+                            <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="2oV-iF-b5j"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确定删除该类别？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxh-pH-pqt">
+                            <rect key="frame" x="10" y="10" width="220" height="49"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAF-az-hYp">
+                            <rect key="frame" x="10" y="80" width="100" height="30"/>
+                            <state key="normal" title="否">
+                                <color key="titleColor" red="0.0" green="0.58431372549019611" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="noDeleteCategory:" destination="iN0-l3-epB" eventType="touchUpInside" id="LsV-G4-IXg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-4h-pFA">
+                            <rect key="frame" x="131" y="80" width="99" height="30"/>
+                            <state key="normal" title="是">
+                                <color key="titleColor" red="0.0" green="0.58431372550000005" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="deleteCategory:" destination="iN0-l3-epB" eventType="touchUpInside" id="I84-yl-TG2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cAF-az-hYp" firstAttribute="leading" secondItem="gGU-UW-unH" secondAttribute="leading" constant="10" id="0Wi-wA-Q4E"/>
+                        <constraint firstAttribute="trailing" secondItem="Sqf-zH-gjR" secondAttribute="trailing" id="7C8-VN-L2K"/>
+                        <constraint firstAttribute="bottom" secondItem="wsF-4h-pFA" secondAttribute="bottom" constant="10" id="7gJ-xA-si0"/>
+                        <constraint firstAttribute="bottom" secondItem="Sqf-zH-gjR" secondAttribute="bottom" constant="50" id="7z1-o6-fn3"/>
+                        <constraint firstItem="xxh-pH-pqt" firstAttribute="top" secondItem="gGU-UW-unH" secondAttribute="top" constant="10" id="8LT-dk-Bae"/>
+                        <constraint firstItem="M6o-pn-RrD" firstAttribute="centerX" secondItem="gGU-UW-unH" secondAttribute="centerX" id="AsZ-Sx-fwD"/>
+                        <constraint firstAttribute="bottom" secondItem="M6o-pn-RrD" secondAttribute="bottom" id="HyG-zX-eX4"/>
+                        <constraint firstItem="Sqf-zH-gjR" firstAttribute="top" secondItem="xxh-pH-pqt" secondAttribute="bottom" constant="10" id="Ilu-Ae-ptu"/>
+                        <constraint firstAttribute="trailing" secondItem="wsF-4h-pFA" secondAttribute="trailing" constant="10" id="NLs-Id-unx"/>
+                        <constraint firstAttribute="trailing" secondItem="xxh-pH-pqt" secondAttribute="trailing" constant="10" id="NMC-Vo-hTw"/>
+                        <constraint firstAttribute="height" constant="120" id="REU-Bo-HkZ"/>
+                        <constraint firstItem="wsF-4h-pFA" firstAttribute="top" secondItem="Sqf-zH-gjR" secondAttribute="bottom" constant="10" id="T5q-Uf-Izr"/>
+                        <constraint firstAttribute="width" constant="240" id="VFv-MM-wHs"/>
+                        <constraint firstItem="wsF-4h-pFA" firstAttribute="leading" secondItem="M6o-pn-RrD" secondAttribute="trailing" constant="10" id="WLV-ra-DSJ"/>
+                        <constraint firstItem="M6o-pn-RrD" firstAttribute="top" secondItem="Sqf-zH-gjR" secondAttribute="bottom" id="cHG-8b-2Zt"/>
+                        <constraint firstItem="cAF-az-hYp" firstAttribute="top" secondItem="Sqf-zH-gjR" secondAttribute="bottom" constant="10" id="eVf-FA-Gjt"/>
+                        <constraint firstAttribute="bottom" secondItem="cAF-az-hYp" secondAttribute="bottom" constant="10" id="g1T-hn-JY9"/>
+                        <constraint firstItem="M6o-pn-RrD" firstAttribute="leading" secondItem="cAF-az-hYp" secondAttribute="trailing" constant="10" id="hW4-7Z-KkV"/>
+                        <constraint firstItem="Sqf-zH-gjR" firstAttribute="leading" secondItem="gGU-UW-unH" secondAttribute="leading" id="i0c-tY-H5E"/>
+                        <constraint firstItem="xxh-pH-pqt" firstAttribute="leading" secondItem="gGU-UW-unH" secondAttribute="leading" constant="10" id="qpd-cI-WPH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gGU-UW-unH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Kwt-9q-FAB"/>
+                <constraint firstItem="gGU-UW-unH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SpM-zN-QPX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backView" destination="gGU-UW-unH" id="iQa-5y-uU7"/>
+                <outlet property="backViewHeight" destination="REU-Bo-HkZ" id="S0N-1a-inz"/>
+                <outlet property="backViewWidth" destination="VFv-MM-wHs" id="jMu-Gf-2CV"/>
+                <outlet property="delete" destination="wsF-4h-pFA" id="ACf-4K-c3q"/>
+                <outlet property="describe" destination="xxh-pH-pqt" id="kKU-QJ-Vzs"/>
+                <outlet property="middleBottom" destination="7z1-o6-fn3" id="KTJ-k4-b65"/>
+                <outlet property="noDelete" destination="cAF-az-hYp" id="ocg-TG-GJm"/>
+            </connections>
+            <point key="canvasLocation" x="422.5" y="339"/>
+        </view>
+    </objects>
+</document>

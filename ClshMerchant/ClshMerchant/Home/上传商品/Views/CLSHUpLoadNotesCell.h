@@ -1,0 +1,24 @@
+//
+//  CLSHUpLoadNotesCell.h
+//  ClshMerchant
+//
+//  Created by kobe on 16/7/28.
+//  Copyright © 2016年 kobe. All rights reserved.
+//
+/*
+ * Copyright 2016-2026 xtiger.cn. All rights reserved.
+ * Support: http://www.xtiger.cn
+ * License: http://www.xtiger.cn/license
+ */
+
+
+#import <UIKit/UIKit.h>
+
+@protocol  CLSHUpLoadNotesCellDelegate<NSObject>
+-(void)textView:(NSString *)content;
+@end
+
+@interface CLSHUpLoadNotesCell : UITableViewCell
+@property (nonatomic, weak) id <CLSHUpLoadNotesCellDelegate>delegate;
+@property (nonatomic, copy) NSString *contentText;
+@end

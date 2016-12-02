@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "b6418900-d3fd-304f-836a-e2b1ebd5d604++312",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b6418900-d3fd-304f-836a-e2b1ebd5d604++312" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b6418900-d3fd-304f-836a-e2b1ebd5d604++312" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "70006845-AE9B-4D81-AA23-E4E34A6AEFF6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b6418900-d3fd-304f-836a-e2b1ebd5d604++312" : "%E7%B2%97%E7%B2%AE%E7%94%9F%E6%B4%BB(%E5%95%86%E5%AE%B6%E7%89%88)\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClshMerchant",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClshMerchant\/ClshMerchant.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/120.24.96.42\/svn\/DreamSailSoft",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b6418900-d3fd-304f-836a-e2b1ebd5d604++312"
+    }
+  ]
+}

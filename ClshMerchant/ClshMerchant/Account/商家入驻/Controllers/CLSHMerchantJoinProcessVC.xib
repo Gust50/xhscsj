@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLSHMerchantJoinProcessVC">
+            <connections>
+                <outlet property="backViewBottom" destination="6aX-Km-Yog" id="oxI-hO-V1e"/>
+                <outlet property="join" destination="o67-8A-bME" id="lwH-xM-GRi"/>
+                <outlet property="joinHeight" destination="a98-Yn-Lt1" id="Wh2-Fb-VeC"/>
+                <outlet property="joinTop" destination="3lH-T9-hUk" id="GFt-Mo-jpN"/>
+                <outlet property="merchantAdvHeight" destination="Usy-DG-oH1" id="9ES-rv-rXB"/>
+                <outlet property="merchantProgressBottom" destination="ogg-70-b5K" id="Aad-4t-HZe"/>
+                <outlet property="merchantProgressTop" destination="yQJ-BK-ugi" id="U4w-ny-t0K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="633"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4L-ec-8ck">
+                    <rect key="frame" x="0.0" y="64" width="413" height="469"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MerchantJoinAdv" translatesAutoresizingMaskIntoConstraints="NO" id="Vb8-vp-S3L">
+                            <rect key="frame" x="0.0" y="0.0" width="413" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="Usy-DG-oH1"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MerchantJoinProgerss" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-jW-X5E">
+                            <rect key="frame" x="10" y="140" width="393" height="309"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Vb8-vp-S3L" firstAttribute="leading" secondItem="y4L-ec-8ck" secondAttribute="leading" id="4y8-E1-x9g"/>
+                        <constraint firstItem="Vb8-vp-S3L" firstAttribute="top" secondItem="y4L-ec-8ck" secondAttribute="top" id="8dy-aZ-uj4"/>
+                        <constraint firstItem="tkD-jW-X5E" firstAttribute="leading" secondItem="y4L-ec-8ck" secondAttribute="leading" constant="10" id="Mdc-N8-GOC"/>
+                        <constraint firstAttribute="bottom" secondItem="tkD-jW-X5E" secondAttribute="bottom" constant="20" id="ogg-70-b5K"/>
+                        <constraint firstAttribute="trailing" secondItem="tkD-jW-X5E" secondAttribute="trailing" constant="10" id="vJb-ao-U4j"/>
+                        <constraint firstAttribute="trailing" secondItem="Vb8-vp-S3L" secondAttribute="trailing" id="vtk-8p-czF"/>
+                        <constraint firstItem="tkD-jW-X5E" firstAttribute="top" secondItem="Vb8-vp-S3L" secondAttribute="bottom" constant="20" id="yQJ-BK-ugi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o67-8A-bME">
+                    <rect key="frame" x="10" y="563" width="393" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.58431372550000005" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="a98-Yn-Lt1"/>
+                    </constraints>
+                    <state key="normal" title="立即入驻">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="immediatelyJoin:" destination="-1" eventType="touchUpInside" id="T4C-Ps-cb7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="o67-8A-bME" firstAttribute="top" secondItem="y4L-ec-8ck" secondAttribute="bottom" constant="30" id="3lH-T9-hUk"/>
+                <constraint firstAttribute="trailing" secondItem="y4L-ec-8ck" secondAttribute="trailing" id="5fe-v9-b70"/>
+                <constraint firstItem="y4L-ec-8ck" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Xo-zr-R3x"/>
+                <constraint firstAttribute="bottom" secondItem="y4L-ec-8ck" secondAttribute="bottom" constant="100" id="6aX-Km-Yog"/>
+                <constraint firstItem="o67-8A-bME" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="P9m-XT-733"/>
+                <constraint firstItem="y4L-ec-8ck" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="eYq-SN-APs"/>
+                <constraint firstAttribute="trailing" secondItem="o67-8A-bME" secondAttribute="trailing" constant="10" id="zpi-Ja-26S"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="9.5" y="333.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MerchantJoinAdv" width="375" height="130"/>
+        <image name="MerchantJoinProgerss" width="352" height="302"/>
+    </resources>
+</document>

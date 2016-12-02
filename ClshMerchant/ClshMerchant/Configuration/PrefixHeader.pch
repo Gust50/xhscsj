@@ -1,0 +1,99 @@
+//
+//  PrefixHeader.pch
+//  ClshMerchant
+//
+//  Created by kobe on 16/7/25.
+//  Copyright © 2016年 kobe. All rights reserved.
+//
+/*
+ * Copyright 2016-2026 xtiger.cn. All rights reserved.
+ * Support: http://www.xtiger.cn
+ * License: http://www.xtiger.cn/license
+ */
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UrlHeader.h"
+#import "BaseModel.h"
+#import "KBHttpTool.h"
+#import "KBRSA.h"
+#import "FetchAppPublicKeyModel.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "NSObject+KBExtension.h"
+#import "UINavigationBar+Awesome.h"
+#import "MJExtension.h"
+#import "MBProgressHUD+KBExtension.h"
+#import "FetchAppPublicKeyModel.h"
+#import "BaseModel.h"
+#import "Masonry.h"
+#import "UIBarButtonItem+KBExtension.h"
+#import "NSString+KBExtension.h"
+#import "UIView+Extension.h"
+#import "KBRegexp.h"
+#import "UIButton+KBExtension.h"
+#import "KBRefreshGifHeader.h"
+#import "KBRefreshAutoGifFooter.h"
+#import "NSArray+KBExtension.h"
+#import "NSMutableArray+KBExtension.h"
+#import "KBDateFormatter.h"
+
+
+//16进制颜色
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//RGB颜色
+#define RGBColor(r,g,b)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define RGBAColor(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+//默认的颜色
+#define systemColor [UIColor colorWithRed:0/255.0 green:149/255.0 blue:68/255.0 alpha:1.0]
+//背景颜色
+#define backGroundColor [UIColor colorWithRed:240/255.0 green:240/255.0 blue:243/255.0 alpha:1.0]
+//默认的字体颜色
+#define systemFontColor [UIColor colorWithRed:132/255.0 green:136/255.0 blue:141/255.0 alpha:1.0]
+
+//等比例缩放
+#define AppScale [UIScreen mainScreen].bounds.size.width/320
+//弱引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+//获取AppDelegate单例
+#define ShareApp ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+//屏幕的宽
+#define SCREENWIDTH   [UIScreen mainScreen].bounds.size.width
+//屏幕的高
+#define SCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
+
+#define ServerError @"服务器出错啦"
+
+//调试信息输出
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+//调试日志输出
+#ifdef DEBUG
+# define DLog(format, ...) NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+
+#define TICK   NSDate *startTime = [NSDate date]
+#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow])
+
+
+#ifdef DEBUG
+#define NULLSAFE_ENABLED 0
+#endif
+
+#endif /* PrefixHeader_pch */
